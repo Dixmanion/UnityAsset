@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.2.4f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -60,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -75,9 +67,34 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\3rdParty\DOTween\DOTween.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DOTween Examples\Basics.cs" />
+    <Compile Include="Assets\DOTween Examples\CustomPlugin Example\CustomPluginExampleBrain.cs" />
+    <Compile Include="Assets\DOTween Examples\CustomPlugin Example\CustomRange.cs" />
+    <Compile Include="Assets\DOTween Examples\CustomPlugin Example\CustomRangePlugin.cs" />
+    <Compile Include="Assets\DOTween Examples\Example Assets\DragTarget.cs" />
+    <Compile Include="Assets\DOTween Examples\Follow.cs" />
+    <Compile Include="Assets\DOTween Examples\Materials.cs" />
+    <Compile Include="Assets\DOTween Examples\Paths.cs" />
+    <Compile Include="Assets\DOTween Examples\Sequences.cs" />
+    <Compile Include="Assets\DOTween Examples\UGUI.cs" />
     <Compile Include="Assets\Scripts\Demo.cs" />
+    <Compile Include="Assets\Scripts\WaterWaveEffect .cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\3rdParty\DOTween\DOTween.XML" />
+    <None Include="Assets\3rdParty\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\3rdParty\DOTween\readme.txt" />
+    <None Include="Assets\Res\Shader\BurnDissolve.shader" />
+    <None Include="Assets\Res\Shader\BurningPaper.shader" />
+    <None Include="Assets\Res\Shader\ScrollShader.shader" />
+    <None Include="Assets\Res\Shader\ScrollingImage.shader" />
+    <None Include="Assets\Res\Shader\TextureAnimate.shader" />
+    <None Include="Assets\Res\Shader\WaterWaveEffect.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
